@@ -67,7 +67,4 @@ app.get('/', (req, res) => {
 });
 //local run krny ky liye yh hy 
 //app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-// ✅ Instead, export the app like this:
-const serverless = require('serverless-http');
 module.exports = app;
-module.exports.handler = serverless(app);
